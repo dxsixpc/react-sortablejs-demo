@@ -25,6 +25,8 @@ import ComponentData from "../Config/ComponentData";
 const uniqueId = require("lodash/uniqueId");
 const _ = require("lodash");
 const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
+
+import Select from "../ComponentList/Select";
 // 根据type类型选择除容器组件的其他组件---容器组件较特殊，单独处理
 const SwitchComponents = (type: string, { name, label }: any) => {
   switch (type) {
@@ -44,6 +46,12 @@ const SwitchComponents = (type: string, { name, label }: any) => {
       return (
         <Form.Item label={label}>
           <Input />
+        </Form.Item>
+      );
+    case "Select":
+      return (
+        <Form.Item label={label}>
+          <Select />
         </Form.Item>
       );
     case "InputNumber":

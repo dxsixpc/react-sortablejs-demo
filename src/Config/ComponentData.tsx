@@ -75,6 +75,13 @@ const ComponentData = [
     },
   },
   {
+    id: "Select",
+    type: "Select",
+    props: {
+      name: "下拉框",
+    },
+  },
+  {
     id: "name",
     type: "Input",
     props: {

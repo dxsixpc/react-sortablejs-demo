@@ -19,6 +19,7 @@ const ComponentList = () => {
           },
           sort: false,
         }}
+        style={{ height: "100%", overflow: "auto" }}
       >
         {ComponentData.map((item) => {
           return (

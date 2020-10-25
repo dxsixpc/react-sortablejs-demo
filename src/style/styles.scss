@@ -13,6 +13,10 @@
 
     .ant-layout-sider {
       background-color: white;
+
+      .ant-layout-sider-children {
+        overflow: hidden;
+      }
     }
 
     .ant-layout-content {
